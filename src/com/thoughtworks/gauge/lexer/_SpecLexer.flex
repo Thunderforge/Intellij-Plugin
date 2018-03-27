@@ -24,7 +24,7 @@ import static com.thoughtworks.gauge.language.token.SpecTokenTypes.*;
 %%
 
 %{
-  public SpecLexer() {
+  public _SpecLexer() {
     this(null);
   }
 %}

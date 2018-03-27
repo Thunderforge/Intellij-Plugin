@@ -22,7 +22,25 @@ package com.thoughtworks.gauge.lexer;
 import com.intellij.lexer.FlexLexer;
 import com.intellij.psi.tree.IElementType;
 
-import static com.thoughtworks.gauge.language.token.SpecTokenTypes.*;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.ARG;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.ARG_END;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.ARG_START;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.COMMENT;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.DYNAMIC_ARG;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.DYNAMIC_ARG_END;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.DYNAMIC_ARG_START;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.KEYWORD;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.NEW_LINE;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.SCENARIO_HEADING;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.SPEC_HEADING;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.STEP;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.STEP_IDENTIFIER;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.TABLE_BORDER;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.TABLE_HEADER;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.TABLE_ROW_VALUE;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.TAGS;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.TEARDOWN_IDENTIFIER;
+import static com.thoughtworks.gauge.language.token.SpecTokenTypes.WHITESPACE;
 
 
 /**
@@ -316,7 +334,7 @@ public class _SpecLexer implements FlexLexer {
   private boolean zzEOFDone;
 
   /* user code: */
-  public SpecLexer() {
+  public _SpecLexer() {
     this(null);
   }
 
